@@ -13,6 +13,7 @@ output_variable = wine[:,11]
 x_train, x_test, y_train, y_test = train_test_split(data, output_variable, stratify=output_variable)
 
 #defining parameters for grid search
+#C is inverse of regularization strength
 param_grid = [
   {'C': [0.000000001,0.0000001,0.00001,0.001,0.1,10,1000,100000,10000000]}
 ]
